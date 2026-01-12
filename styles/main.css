@@ -308,4 +308,94 @@ header {
 }
 .newItem p {
   padding: 8px;
+}
+
+.color {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.color-layout {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.color-layout hgroup {
+  margin-bottom: 48px;
+}
+.color-layout h2 {
+  margin-bottom: 8px;
+}
+
+.colorGroup-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .colorGroup-desktop {
+    display: flex;
+    height: 706.11px;
+    gap: 24px;
+  }
+  .colorGroup-desktop img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .colorGroup-desktop .colorGroup-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .colorGroup-desktop .colorItem-top {
+    display: flex;
+    gap: 24px;
+    height: 306px;
+  }
+  .colorGroup-desktop .colorItem-top div {
+    flex: 1;
+  }
+  .colorGroup-desktop .colorItems {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .colorGroup-desktop .colorItems div {
+    flex: 1;
+    overflow: hidden;
+  }
+  .colorGroup-desktop .colorItem-bottom {
+    height: 376.11px;
+  }
+  .colorGroup-desktop .colorGroup-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .colorGroup-desktop .colorGroup-right div {
+    flex: 1;
+    overflow: hidden;
+  }
+}
+
+.colorGroup-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.colorGroup-mobile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.colorGroup-mobile li {
+  min-width: 351px;
+  height: 218.84px;
+}
+@media (min-width: 768px) {
+  .colorGroup-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
