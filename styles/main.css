@@ -312,11 +312,11 @@ header {
 
 .color {
   color: #FFFFFF;
-  background-image: url(/assets/bg-2-mobile.png);
+  background-image: url(../assets/bg-2-mobile.png);
 }
 @media (min-width: 768px) {
   .color {
-    background-image: url(/assets/bg-2.png);
+    background-image: url(../assets/bg-2.png);
   }
 }
 .color .container {
