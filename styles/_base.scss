@@ -16,10 +16,6 @@ h5,
 h6 {
   font-weight: 500;
   line-height: 1.2;
-
-  @media (min-width: 768px) {
-    font-weight: 400;
-  }
 }
 
 h1 {
@@ -33,7 +29,7 @@ h2 {
 a {
   display: inline-block;
   text-decoration: none;
-  color: #000000;
+  color: inherit;
 }
 
 img {
