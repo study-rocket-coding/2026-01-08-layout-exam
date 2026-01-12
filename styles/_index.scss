@@ -1,0 +1,442 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 0px 12px;
+
+  @media (min-width: 768px) {
+    padding: 0px;
+  }
+}
+
+header {
+  padding: 0px 12px;
+
+  @media (min-width: 768px) {
+    padding: 0px;
+  }
+}
+
+.nav-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 80px;
+
+    ul {
+      display: flex;
+      gap: 48px;
+    }
+
+    ul a {
+      padding: 8px;
+
+      &:hover {
+        border-bottom: 1px solid #000000;
+      }
+    }
+  }
+}
+
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  .nav-icon {
+    display: flex;
+    gap: 12px;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.banner {
+  background-color: #000000;
+}
+
+.banner-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  hgroup {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: -163px;
+
+    h1 {
+      margin-bottom: 16px;
+    }
+
+    .dateline {
+      margin-bottom: 4px;
+    }
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+}
+
+.new {
+  color: #FFFFFF;
+  background-color: #2B2B2B;
+}
+
+.new-layout {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+    }
+  }
+}
+
+.newItem {
+  img {
+    margin-bottom: 8px;
+    aspect-ratio: 1/1;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+      aspect-ratio: unset;
+    }
+  }
+
+  p {
+    padding: 8px;
+  }
+}
+
+.color {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.color-layout {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  hgroup {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
+  }
+}
+
+.colorGroup-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    height: 706.11px;
+    gap: 24px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .colorGroup-left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .colorItem-top {
+      display: flex;
+      gap: 24px;
+      height: 306px;
+
+      div {
+        flex: 1;
+      }
+    }
+
+    .colorItems {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      div {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+
+    .colorItem-bottom {
+      height: 376.11px;
+    }
+
+    .colorGroup-right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      div {
+        flex: 1;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.colorGroup-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  li {
+    min-width: 351px;
+    height: 218.84px;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.custom {
+  background-color: #404040;
+}
+
+.custom-layout {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 24px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #FFFFFF;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.customGroup-layout {
+  display: flex;
+  gap: 24px;
+
+  .customGroup-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .customGroup-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+}
+
+.customForm-layout {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+
+  @media (min-width: 768px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  h2 {
+    margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.input-mobile {
+  display: flex;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .form-label {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .form-control {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    border-radius: 4px;
+    border: 1.5px solid #FFFFFF;
+    background-color: transparent;
+
+    &::placeholder {
+      color: #FFFFFF;
+
+      @media (min-width: 768px) {
+        color: #ACACAC;
+      }
+    }
+  }
+}
+
+.submit-wrapper {
+  align-self: end;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.submit {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  border-radius: 4px;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: none;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+
+  @media (min-width: 768px) {
+    width: auto;
+    padding: 6px 12px;
+  }
+}
+
+footer {
+  color: #FFFFFF;
+  background-color: #000000;
+
+  .footer-layout {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+
+    @media (min-width: 768px) {
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  .footer-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mediaList {
+    display: flex;
+    gap: 40px;
+  }
+
+  .line {
+    display: none;
+    width: 100px;
+    border-bottom: 1px solid #FFFFFF;
+    padding-top: 48px;
+    margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+    }
+  }
+}

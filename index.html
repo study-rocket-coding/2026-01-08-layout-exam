@@ -4,8 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INEAR</title>
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  
+  <header>
+    <nav class="nav-desktop">
+      <div>
+        <img src="./assets/logo-black.png" alt="logo-black">
+      </div>
+      <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">最新消息</a></li>
+        <li><a href="#">商品列表</a></li>
+        <li><a href="#">關於我們</a></li>
+      </ul>
+      <div>
+        <img src="./assets/search.png" alt="search">
+      </div>
+    </nav>
+    <nav class="nav-mobile">
+      <div>
+        <img src="./assets/logo-black.png" alt="logo-black">
+      </div>
+      <div class="nav-icon">
+        <div>
+          <img src="./assets/search.png" alt="search">
+        </div>
+        <div>
+          <img src="./assets/hamburger.png" alt="hamburger">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <div class="banner-layout container">
+        <picture>
+          <source srcset="./assets/bg-1-desktop.png" media="(min-width:768px)">
+          <img src="./assets/bg-1-mobile.png" alt="bg-1">
+        </picture>
+        <hgroup>
+          <h1>INEAR PRO MAX</h1>
+          <div class="title-text">
+            <p class="dateline">9/16 - 10/30 官網搶先販售</p>
+            <p>新色上市，搭載最新降噪技術，提供給您最高音質享受，採用適應性演算法，快速處理音效，讓您享受更高傳真的效果。</p>
+          </div>
+        </hgroup>
+      </div>
+    </section>
+    <section class="new">
+      <div class="new-layout container">
+        <h2>最新商品</h2>
+        <ul>
+          <li class="newItem">
+            <a href="#">
+              <img src="./assets/newItem-1.png" alt="newItem-1">
+              <p>INEAR PRO II</p>
+            </a>
+          </li>
+          <li class="newItem">
+            <a href="#">
+              <img src="./assets/newItem-2.png" alt="newItem-2">
+              <p>INEAR PRO MAX</p>
+            </a>
+          </li>
+          <li class="newItem">
+            <a href="#">
+              <img src="./assets/newItem-3.png" alt="newItem-3">
+              <p>INEAR PRO I</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="color">
+      <div class="color-layout container">
+        <hgroup>
+          <h2>多色選擇，專屬你的與眾不同</h2>
+          <p>我的風格我主張，獨創品牌限定色，除了耀眼更要獨一無二</p>
+        </hgroup>
+        <ul class="colorGroup-desktop">
+          <li class="colorGroup-left">
+            <div class="colorItem-top">
+              <div>
+                <img src="./assets/colorItem-1.png" alt="colorItem-1">
+              </div>
+              <div class="colorItems">
+                <div>
+                  <img src="./assets/colorItem-2.png" alt="colorItem-2">
+                </div>
+                <div>
+                  <img src="./assets/colorItem-3.png" alt="colorItem-3">
+                </div>
+              </div>
+            </div>
+            <div class="colorItem-bottom">
+              <img src="./assets/colorItem-4.png" alt="colorItem-4">
+            </div>
+          </li>
+          <li class="colorGroup-right">
+            <div>
+              <img src="./assets/colorItem-5.png" alt="colorItem-5">
+            </div>
+            <div>
+              <img src="./assets/colorItem-6.png" alt="colorItem-6">
+            </div>
+            <div>
+              <img src="./assets/colorItem-7.png" alt="colorItem-7">
+            </div>
+          </li>
+        </ul>
+        <ul class="colorGroup-mobile">
+          <li>
+            <img src="./assets/colorItem-1.png" alt="colorItem-1">
+          </li>
+          <li>
+            <img src="./assets/colorItem-2.png" alt="colorItem-2">
+          </li>
+          <li>
+            <img src="./assets/colorItem-3.png" alt="colorItem-3">
+          </li>
+          <li>
+            <img src="./assets/colorItem-4.png" alt="colorItem-4">
+          </li>
+          <li>
+            <img src="./assets/colorItem-5.png" alt="colorItem-5">
+          </li>
+          <li>
+            <img src="./assets/colorItem-6.png" alt="colorItem-6">
+          </li>
+          <li>
+            <img src="./assets/colorItem-7.png" alt="colorItem-7">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="custom">
+      <div class="custom-layout container">
+        <div class="customGroup-layout">
+          <div class="customGroup-left">
+            <img src="./assets/customItem-1.png" alt="customItem-1">
+            <img src="./assets/customItem-2.png" alt="customItem-2">
+          </div>
+          <div class="customGroup-right">
+            <img src="./assets/customItem-3.png" alt="customItem-3">
+            <img src="./assets/customItem-4.png" alt="customItem-4">
+          </div>
+        </div>
+        <div class="customForm-layout">
+          <hgroup>
+            <h2>訂製專屬於您的完美耳機</h2>
+            <p>請於下方留下您的詳細資料與訂製需求，將有專人於 3 日內聯繫，此表單僅做為客服調查，不等同於完成訂製商品。</p>
+          </hgroup>
+          <form class="input-desktop">
+            <div class="input-group">
+              <label for="lastName" class="form-label">姓氏</label>
+              <input type="text" class="form-control" id="lastName" placeholder="請輸入姓氏">
+            </div>
+            <div class="input-group">
+              <label for="firstName" class="form-label">名字</label>
+              <input type="text" class="form-control" id="firstName" placeholder="請輸入名字">
+            </div>
+            <div class="input-group">
+              <label for="email" class="form-label">信箱</label>
+              <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+            </div>
+            <div class="input-group">
+              <label for="tel" class="form-label">聯絡電話</label>
+              <input type="tel" class="form-control" id="tel" placeholder="請輸入聯絡電話">
+            </div>
+            <div class="submit-wrapper">
+              <input type="submit" value="送出表單" class="submit"/>
+            </div>
+          </form>
+          <form class="input-mobile">
+            <div class="input-group">
+              <label for="lastName" class="form-label">姓氏</label>
+              <input type="text" class="form-control" id="lastName" placeholder="姓氏">
+            </div>
+            <div class="input-group">
+              <label for="firstName" class="form-label">名字</label>
+              <input type="text" class="form-control" id="firstName" placeholder="名字">
+            </div>
+            <div class="input-group">
+              <label for="email" class="form-label">信箱</label>
+              <input type="email" class="form-control" id="email" placeholder="信箱">
+            </div>
+            <div class="input-group">
+              <label for="tel" class="form-label">聯絡電話</label>
+              <input type="tel" class="form-control" id="tel" placeholder="聯絡電話">
+            </div>
+            <div class="submit-wrapper">
+              <input type="submit" value="送出表單" class="submit"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-layout container">
+      <div class="footer-media">
+        <a href="#" class="logo"><img src="./assets/logo-white.png" alt="logo-white"></a>
+        
+        <ul class="mediaList">
+          <li><a href="#"><img src="./assets/twitter.png" alt="twitter"></a></li>
+          <li><a href="#"><img src="./assets/instagram.png" alt="instagram"></a></li>
+          <li><a href="#"><img src="./assets/facebook.png" alt="facebook"></a></li>
+        </ul>
+
+        <div class="line"></div>
+      </div>
+      <div class="footer-content">
+        <nav>
+          <a href="#">最新商品</a>
+          <a href="#">多色選擇</a>
+          <a href="#">定製耳機</a>
+        </nav>
+        <p>© WEBNAME 2024 All right Reserved</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
