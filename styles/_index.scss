@@ -140,7 +140,15 @@ header {
 
 .color {
   color: #FFFFFF;
-  background-color: #000000;
+  background-image: url(/assets/bg-2-mobile.png);
+
+  @media (min-width: 768px) {
+    background-image: url(/assets/bg-2.png);
+  }
+
+  .container {
+    max-width: 1076px;
+  }
 }
 
 .color-layout {
@@ -256,6 +264,7 @@ header {
 
 .customGroup-layout {
   display: flex;
+  justify-content: center;
   gap: 24px;
 
   .customGroup-left {
